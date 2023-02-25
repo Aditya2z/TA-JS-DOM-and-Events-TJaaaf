@@ -22,6 +22,8 @@ ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  text-align: center;
+  padding: 1rem;
 }
 
 ol,
@@ -32,4 +34,15 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  border: 1px solid black;
+  width:4rem;
+  height:4rem;
 }
