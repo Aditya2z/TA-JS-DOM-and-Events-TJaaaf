@@ -92,3 +92,7 @@ h1 {
 .first {
   margin-right: 20px;
 }
+
+.first, .second {
+  transition: all 100ms ease ;
+}
