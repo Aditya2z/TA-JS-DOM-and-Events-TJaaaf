@@ -65,8 +65,8 @@ btn1.addEventListener('click', function() {
 let box2 = document.querySelector(".second");
 
 
-let btn2 = document.querySelector(".btn2");
-btn2.addEventListener('mousemove', function() {
+
+box2.addEventListener('mousemove', function() {
     i++;
     box2.style.backgroundColor = colors[i];
     if(i > 49) i = 0;
