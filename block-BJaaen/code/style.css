@@ -18,7 +18,7 @@ header {
 }
 
 main {
-    padding: 3rem;
+    padding: 0 3rem;
 }
 
 p {
@@ -35,6 +35,10 @@ p {
     text-align: center;
     margin: 0 2rem;
     color: #1E90FF;
+    cursor: pointer;
+}
+.your-display {
+    color: #1E90FF;
 }
 
 .game-icon-computer {
@@ -48,6 +52,18 @@ p {
     color: rgb(182, 20, 20);
 }
 
+.computer-display {
+    color: rgb(182, 20, 20);
+}
+
 .refresh-icon {
     font-size: 2rem;
+    cursor: pointer;
+}
+
+.result {
+    height: 7rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
 }
