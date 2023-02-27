@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container-40 {
+    max-width: 40%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.screen {
+    background-color: black;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    height: 8rem;
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+    padding-top: 2.5rem;
+    padding-right: 1rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 7.5rem;
+    height: 5rem;
+    margin: .5rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: #CFCFCF;
+}
+
+.column-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.equals {
+    height: 76.3%;
+    background-color: #018080;
+}
+
+.clear {
+    background-color: #3D1B10;
+    color: white;
+}
+
+.operation {
+    background-color: #710133;
+    color: white;
+}
+
