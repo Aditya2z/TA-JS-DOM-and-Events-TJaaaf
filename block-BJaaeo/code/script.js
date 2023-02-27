@@ -3,7 +3,6 @@ let screen = document.querySelector(".screen");
 
 buttons.forEach(ele => ele.addEventListener("click", (event) => {
     
-    console.log(event);
 
     switch(true) {
         case (event.target.innerText === "C") :
@@ -13,8 +12,11 @@ buttons.forEach(ele => ele.addEventListener("click", (event) => {
             screen.innerText = eval(screen.innerText);
             console.log(eval(screen.innerText));
             break;
+        case (event.target.classList.value.includes("operation")): 
+            screen.innerText += " " + event.target.innerText + " " ;
+            break;
         default:
-        screen.innerText += event.target.innerText;
+            screen.innerText += event.target.innerText ;
     }
     
 }));
