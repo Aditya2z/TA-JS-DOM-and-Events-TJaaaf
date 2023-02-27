@@ -1,0 +1,69 @@
+.container-40 {
+    max-width: 45%;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0,.25), 
+                -5px -5px 10px 0px rgba(0, 0, 0,.25);;
+}
+
+header {
+    background-color: #1E90FF;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+main {
+    padding: 0 3rem;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.game-icon-you {
+    text-align: center;
+}
+
+.game-icon-you .fa{
+    font-size: 4rem;
+    text-align: center;
+    margin: 0 2rem;
+    color: #1E90FF;
+    cursor: pointer;
+}
+.your-display {
+    color: #1E90FF;
+}
+
+.game-icon-computer {
+    text-align: center;
+}
+
+.game-icon-computer .fa{
+    font-size: 4rem;
+    text-align: center;
+    margin: 0 2rem;
+    color: rgb(182, 20, 20);
+}
+
+.computer-display {
+    color: rgb(182, 20, 20);
+}
+
+.refresh-icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.result {
+    height: 7rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
