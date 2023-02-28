@@ -51,6 +51,7 @@ function handleSubmit(event) {
     if(userInfo.username.length < 4) {
         errorMessage =  `Username can't be less than 4 characters`;
         username.classList.add("error");
+        username.classList.remove("success");
         username.nextElementSibling.innerText = errorMessage;
     } else {
         username.classList.remove("error");
@@ -61,6 +62,7 @@ function handleSubmit(event) {
     if(doesContainNumber(userInfo.name) ) {
         errorMessage =  `You can't use number in the name field`;
         name.classList.add("error");
+        name.classList.remove("success");
         name.nextElementSibling.innerText = errorMessage;
     } else {
         name.classList.remove("error");
@@ -72,6 +74,7 @@ function handleSubmit(event) {
     if(userInfo.email.length < 6) {
         errorMessage =  `Not a valid email`;
         email.classList.add("error");
+        email.classList.remove("success");
         email.nextElementSibling.innerText = errorMessage;
     } else {
         email.classList.remove("error");
@@ -83,6 +86,7 @@ function handleSubmit(event) {
     if(userInfo.phone.length < 7) {
         errorMessage =  `Phone Number can't be less than 7 characters`;
         phone.classList.add("error");
+        phone.classList.remove("success");
         phone.nextElementSibling.innerText = errorMessage;
     } else {
         phone.classList.remove("error");
@@ -94,6 +98,7 @@ function handleSubmit(event) {
     if(userInfo.password !== userInfo.confirmPassword) {
         errorMessage =  `Passwords don't match`;
         confirmPassword.classList.add("error");
+        confirmPassword.classList.remove("success");
         confirmPassword.nextElementSibling.innerText = errorMessage;
     } else {
         password.classList.add("success");
