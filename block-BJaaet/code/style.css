@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif   ;
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+input {
+    padding: .75rem 1.5rem;
+    width: 100%;
+    border: none;
+    border-radius: .25rem;
+    font-weight: 700;
+    color: rgb(59, 42, 10);
+    border: 2px solid transparent;
+    
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid rgba(255, 167, 3, 0.671);
+}
+
+.container {
+    background-color: rgba(197, 140, 34, 0.795);
+    max-width: 40%;
+    width: 100%;
+    padding: 2rem;
+    margin: 2rem auto;
+    height: 35rem;
+    border-radius: 1rem;
+}
+
+.watchlist div{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    align-items: center;
+}
+
+.watchlist div input {
+width: max-content;
+margin-right: 1rem;
+}
+
+input[type="submit"] {
+    display: none;
+}
+
+p {
+    margin: 0;
+}
