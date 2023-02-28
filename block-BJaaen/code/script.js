@@ -42,11 +42,12 @@ yourIcons.forEach(icon => icon.addEventListener("click", (event) => {
             (yourHand.id === "scissors" && computerHand.id == "paper") :
             result.innerText = "You Won";
             yourScore.innerText = Number(yourScore.innerText) + 1;
-
             break;
+
         case (yourHand.id === computerHand.id):
             result.innerText ="Match Tied";
             break;
+            
         default:
             result.innerText = "You Lost";
             computerScore.innerText = Number(computerScore.innerText) + 1;
