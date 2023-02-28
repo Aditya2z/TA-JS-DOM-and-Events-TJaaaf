@@ -1,9 +1,10 @@
 let body = document.querySelector("body");
-let form = document.querySelector(".container");
+let form1 = document.querySelector(".container");
 let userInfo = {};
 
 
 function handleSubmit(event) {
+    let form = event.target;
     event.preventDefault();
     userInfo.name = form.elements.name.value;
     userInfo.email = form.elements.email.value;
@@ -44,5 +45,5 @@ function handleSubmit(event) {
 
 };
 
-form.addEventListener("submit", handleSubmit);
+form1.addEventListener("submit", handleSubmit);
 
