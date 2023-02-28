@@ -7,7 +7,37 @@
     <title>Form Validation 👇</title>
   </head>
   <body>
-   
+    <form class="container">
+        <legend>Form</legend>
+        <div class="form-control">
+          <input type="text" name="username" placeholder="Username">
+          <small></small>
+        </div>
+        <div class="form-control">
+          <input type="text" name="name" placeholder="Enter your name" required>
+          <small></small>
+        </div>
+        <div class="form-control">
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <small></small>
+        </div>
+        <div class="form-control">
+            <input type="number" name="phone" placeholder="Enter your phone number">
+          <small></small>
+        </div>
+        <div class="form-control">
+          <input type="password" name="password" placeholder="Choose password" required>
+          <small></small>
+        </div>
+        <div class="form-control">
+          <input type="password" name="confirmPassword" placeholder="Confirm password" required>
+          <small></small>
+        </div>
+        <div class="form-control">
+          <input type="submit" value="Submit">
+        </div>
+        
+    </form>
     <script src="./script.js"></script>
   </body>
 </html>
