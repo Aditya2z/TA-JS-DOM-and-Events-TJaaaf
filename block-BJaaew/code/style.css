@@ -1,7 +1,276 @@
-* {
-  box-sizing: border-box;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1;
 }
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom Styling Starts Here */
+
+/* My Resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* General Styles */
+html {
+    font-size: 16px;
+}
+body {
+    font-family: 'Raleway', sans-serif;;
+    max-width: 1370px;
+    width: 100%;
+    line-height: 1.5;
+}
+button,
+input,
+select,
+textarea {
+    font-family: 'Raleway', sans-serif;;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    padding: 0;
+    font-weight: 600;
+}
+
+/* Variables */
+:root {
+    --primary:  black;
+    --secondary: white;
+    --tertiary: #9F34DF;
+}
+
+/* Containers */
+.container-90{
+    max-width: 100%;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 5%;
+    background: linear-gradient(to right, rgba(228, 149, 3, 0.25),
+    rgba(145, 29, 0, 0.5)),
+    url(../assets/media/desktop-1920x1080.jpg) repeat;
+    background-size: 100%;
+}
+
+/* Flex */
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.flex-32 {
+    flex: 0 1 32%;
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--secondary);
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Texts */
+.text {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+/* Buttons */
+.btn {
+    background: var(--primary);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+}
+
+/* Styling Header */
+header {
+  padding: 2rem;
+  margin: 1rem 0;
+  text-align: center;
+ 
+}
+
+.search {
+  padding: 0.45rem 1rem;
+  margin-top: .5rem;
+  width: 15rem;
+  border-radius: .25rem;
+  background-color: var(--secondary);
+  font-size: 1rem;
+}
+
+/* Styling Main */
+main {
+  position: relative;
+}
+
+main .root-people {
+  margin: 2rem 0;
+}
+
+main .person {
+  text-align: center;
+  margin: .5rem;
+  padding: 1rem;
+  border-radius: .25rem;
+}
+
+main .Starks {
+  background: linear-gradient(rgba(105, 104, 104, 0.9),
+   rgba(255,255,255,.9)) , 
+   url(../assets/media/starks.jpg);
+  background-size: 100% 100%;
+}
+
+main .Lannisters {
+  background: linear-gradient(rgba(196, 16, 16, 0.75),
+   rgba(255,255,255,.75)) ,
+    url(../assets/media/lannisters.png);
+  background-size: 100% 100%;
+}
+
+main .Baratheons {
+  background: linear-gradient(rgba(223, 215, 106, 0.6),
+   rgba(152, 153, 101, 0.6)) ,
+    url(../assets/media/Game\ of\ Thrones\ Wallpaper_\ House\ Baratheon.jpg);
+  background-size: 100% 100%;
+}
+
+main .Targaryens {
+  background: linear-gradient(rgba(252, 0, 0, 0.5),
+   rgba(14, 9, 9, 0.75)) ,
+    url(../assets/media/targaryn.jpg);
+  background-size: 100% 100%;
+  color: var(--secondary);
+}
+
+main .Greyjoys {
+  background: linear-gradient(rgba(252, 0, 0, 0.5),
+   rgba(122, 122, 122, 0.5)) ,
+    url(../assets/media/greyjoys.jpg);
+  background-size: 100% 100%;
+}
+
+main .Tyrells {
+  background: linear-gradient(rgba(223, 215, 106, 0.5),
+   rgba(32, 143, 17, 0.5)) ,
+    url(../assets/media/tyrells.jpg) 100% -35px;
+  background-size: 100% 150%;
+}
+
+main .Tullys {
+  background: linear-gradient(rgba(223, 133, 106, 0.5),
+   rgba(101, 125, 153, 0.5)) ,
+    url(../assets/media/tully.jpg);
+  background-size: 100% 120%;
+}
+
+main .Redwyne {
+  background: linear-gradient(rgba(223, 133, 106, 0.5),
+   rgba(101, 125, 153, 0.5)) ,
+    url(../assets/media/house\ redwyne.jpg);
+  background-size: 100% 100%;
+}
+
+main .Freys {
+  background: linear-gradient(rgba(223, 133, 106, 0.5),
+   rgba(101, 125, 153, 0.5)) ,
+    url(../assets/media/wp9939112-house-frey-wallpapers.png);
+  background-size: 100% 120%;
+}
+
+main .Arryns {
+  background: linear-gradient(rgba(0, 201, 191, 0.5),
+   rgba(101, 125, 153, 0.5)) ,
+    url(../assets/media/arryns.png);
+  background-size: 100% 100%;
+}
+
+main .Dothrakis {
+  background: linear-gradient(rgba(223, 133, 106, 0.5),
+   rgba(101, 125, 153, 0.5)) ,
+    url(../assets/media/dothraki.jpg) 100% -20px no-repeat;
+  background-size: 100% 120%;
+}
+
+main img {
+  border-radius: 50%;
+}
+
+.selected {
+  background-color: white;
+  color: black;
+}
+
