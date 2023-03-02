@@ -152,6 +152,8 @@ h2 {
     font-weight: 500;
     padding: .5rem 1rem;
     border-radius: .25rem;
+    border: 1px solid transparent;
+    margin: 1rem 0;
 }
 
 /* Styling Header */
@@ -274,3 +276,15 @@ main img {
   color: black;
 }
 
+
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.btn:hover > a {
+  background-color: white;
+  color: black;
+}
